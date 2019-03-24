@@ -1,0 +1,29 @@
+.userPicture{
+    height:$left-section;
+    width:$left-section;
+}
+
+.about-section{
+    width:$left-section;
+    background-color: $about-grey;
+
+}
+
+.namebanner{
+    background-color: $banner-blue;
+    color:white;
+    margin: 0;
+    padding: $s-size $m-size;
+    width:1.2*$left-section;
+    opacity: 0.75;
+    z-index: 10;
+    position: absolute;
+    transform: translateY(-$header-banner-spacing);
+
+    h2{
+        margin:0;
+    }
+    h3{
+        margin:0;
+    }
+}

@@ -1,4 +1,6 @@
 import React from 'react';
 
-const AboutPage = () => (<div>About GOPimentel</div>);
+const AboutPage = () => (<div>
+    About GOPimentel
+    </div>);
 export default AboutPage;
