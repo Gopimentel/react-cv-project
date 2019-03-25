@@ -59,7 +59,7 @@
 }
 
 .skills-section {
-  padding-left: $l-size;
+  padding: 0 $m-size 0 $l-size;
 }
 
 .introduction {
@@ -73,6 +73,7 @@
 .introduction__text{
   overflow: overlay;
   height: $left-section -  5*$header-banner-spacing ;
+  padding-right: 2rem;
   p {
   
     color: $text-color;
