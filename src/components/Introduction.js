@@ -3,7 +3,9 @@ import SectionTitle from './SectionTitle';
 const Introduction = props => (
   <div className = "introduction">
     <SectionTitle title={"Introduction"} />
-    <p>{props.text}</p>
+    <div className="introduction__text">
+      <p>{props.text}</p>
+    </div>
   </div>
 );
 

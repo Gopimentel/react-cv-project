@@ -15,7 +15,8 @@
 }
 
 .banner {
-  width: 100%;
+  
+  width: auto;
   z-index: 10;
   position: absolute;
   transform: translateY(-$header-banner-spacing);
@@ -29,6 +30,7 @@
 }
 
 .banner__name {
+  min-width:  $left-section;
   opacity: 0.75;
   color: white;
   background-color: $banner-blue;
@@ -60,9 +62,17 @@
 
 .introduction {
   height: $left-section - $header-banner-spacing;
+ 
+  padding-left : $s-size;
+  
+  
+  
+}
+.introduction__text{
   overflow: overlay;
-  margin : 0 $s-size;
+  height: $left-section -  4*$header-banner-spacing ;
   p {
+  
     color: $text-color;
     text-align: justify;
   }
