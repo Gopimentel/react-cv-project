@@ -1,7 +1,9 @@
 .cvPage {
   display: flex;
   //transform: translate(50%, 0%);
-  width:60%;
+  width:100%;
+  max-width:$cv-page-width-limit;
+  margin:$s-size
 }
 
 .userPicture {
@@ -15,7 +17,7 @@
 }
 
 .banner {
-  
+  max-width:$cv-page-width-limit;
   width: auto;
   z-index: 10;
   position: absolute;

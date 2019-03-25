@@ -45,7 +45,13 @@ export const userData = {
   experience:[
     {
       title: "Freelancer",
-      description : " DEVELOPMENT OF REACT APP AND LEARNING BY MYSELF"    
+    
+      titles : [ {
+        startDate: "Current",
+        title:"Frontend Web Developer (React)",
+
+      }   ],
+       
     },
 
     {

@@ -1,18 +1,26 @@
 .skillList__title {
     font-weight: bold;
     color:$banner-blue;
+    margin-bottom:0;
     
 }
 .skillList__date {
     font-weight: bold;
     color:$text-color-dark;
-    margin: $s-size 0 ;
+    margin: $s-size/4 0 $s-size/2 0;
 }
-.skillList__titles {
+.skillList__dates {
     color:$text-color;
     margin: 0.5*$s-size 0;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.skillList__titles {
+    white-space: nowrap;
+    text-overflow:ellipsis;
 }
 .skilList__description{
     color:$text-color;
     text-align: justify;
 }
+

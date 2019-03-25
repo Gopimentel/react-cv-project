@@ -2,7 +2,7 @@ import React from "react";
 import Accomplishments from "./Accomplishments";
 import Banner from "./Banner";
 import Introduction from "./Introduction";
-import SkillSection from "./SkillSection";
+import ExperienceSection from "./ExperienceSection";
 import { userData } from "../fixtures/userData";
 
 const CVPage = () => (
@@ -15,8 +15,8 @@ const CVPage = () => (
     <div className="skills-section">
       <Introduction text={userData.introduction} />
       <div className ="bannerSection">
-        <SkillSection title="Experience" data={userData.experience} />
-        <SkillSection title="Awards" data={userData.awards} />
+        <ExperienceSection title="Experience" data={userData.experience} />
+    
       </div>
     </div>
   </div>

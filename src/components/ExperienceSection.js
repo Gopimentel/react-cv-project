@@ -1,13 +1,13 @@
 import React from "react";
-import SkillListItem from "./SkillListItem";
+import ExperienceListItem from "./ExperienceListItem";
 import SectionTitle from "./SectionTitle";
-const SkillSection = props => (
+const ExperienceSection = props => (
   <div>
     <SectionTitle title={props.title} />
     {props.data.map((elem, index) => (
-      <SkillListItem key={index} {...elem} />
+      <ExperienceListItem key={index} {...elem} />
     ))}
   </div>
 );
 
-export default SkillSection;
+export default ExperienceSection;
