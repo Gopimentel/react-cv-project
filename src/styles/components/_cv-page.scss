@@ -1,29 +1,75 @@
-.userPicture{
-    height:$left-section;
-    width:$left-section;
+.cvPage {
+  display: flex;
+  transform: translate(50%, 0%);
+  width:50%;
 }
 
-.about-section{
-    width:$left-section;
-    background-color: $about-grey;
-
+.userPicture {
+  height: $left-section;
+  width: $left-section;
 }
 
-.namebanner{
-    background-color: $banner-blue;
-    color:white;
+.about-section {
+  width: $left-section;
+  background-color: $about-grey;
+}
+
+.banner {
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  transform: translateY(-$header-banner-spacing);
+  display: flex;
+  h2 {
     margin: 0;
-    padding: $s-size $m-size;
-    width:1.2*$left-section;
-    opacity: 0.75;
-    z-index: 10;
-    position: absolute;
-    transform: translateY(-$header-banner-spacing);
+  }
+  h3 {
+    margin: 0;
+  }
+}
 
-    h2{
-        margin:0;
-    }
-    h3{
-        margin:0;
-    }
+.banner__name {
+  opacity: 0.75;
+  color: white;
+  background-color: $banner-blue;
+  width: 1 * $left-section + $s-size;
+  margin: 0;
+  padding: $s-size $m-size;
+}
+
+.banner__icons {
+  img {
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+.bannerInfo {
+  display: flex;
+  align-items: center;
+  padding-left: $s-size;
+  p {
+    margin: 0.5rem;
+    color: $text-color;
+  }
+}
+
+.skills-section {
+  padding-left: $l-size;
+}
+
+.introduction {
+  height: $left-section - $header-banner-spacing;
+  overflow: overlay;
+  margin : 0 $s-size;
+  p {
+    color: $text-color;
+    text-align: justify;
+  }
+}
+
+.bannerSection {
+  transform: translateY(4.65 * $header-banner-spacing);
+  padding-bottom: 2.5 * $header-banner-spacing;
+  padding-left: $s-size;
 }

@@ -1,16 +1,16 @@
-.educationlist{
-    transform: translateY(2.5*$header-banner-spacing);
-    padding-bottom:2.5*$header-banner-spacing;
+.accomplisments{
+    transform: translateY(3.5*$header-banner-spacing);
+    padding-bottom:3*$header-banner-spacing;
     padding-left:$s-size;
 }
 
-.about-title{
+.accomplisments__title{
     width:60%;
     color:$text-color-dark;
     margin-bottom: 0.5* $horizontal-item-spacing;
 }
 
-.about-title-line{
+.accomplisments__titleline{
     width:60%;
     border-top: 5px solid $banner-blue;
 }

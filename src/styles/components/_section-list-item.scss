@@ -1,7 +1,7 @@
-.educationlistitem-box{
+.sectionlistitem-box{
     width:85%;
     color:$text-color;
-
+    text-align: justify;
    
     p:nth-child(-n+2){
         color:$text-color-dark;
@@ -10,11 +10,13 @@
     p:last-of-type{
         font-weight:lighter;
     }
+
+    
 }
 
 
 // Hide last bar since not item comes next
-.educationlistitem-box:last-child hr{
+.sectionlistitem-box:last-child hr{
     visibility: hidden;
 }
 
