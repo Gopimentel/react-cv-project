@@ -1,7 +1,7 @@
 .cvPage {
   display: flex;
-  transform: translate(50%, 0%);
-  width:50%;
+  //transform: translate(50%, 0%);
+  width:60%;
 }
 
 .userPicture {
@@ -70,7 +70,7 @@
 }
 .introduction__text{
   overflow: overlay;
-  height: $left-section -  4*$header-banner-spacing ;
+  height: $left-section -  5*$header-banner-spacing ;
   p {
   
     color: $text-color;
