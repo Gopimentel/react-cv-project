@@ -7,8 +7,8 @@ const SkillSection = props => (
     <SectionTitle title={props.title} />
     <div className="progressItemList">
       <div>
-        {props.data.map(elem => (
-          <div className="progressItem">
+        {props.data.map((elem,index) => (
+          <div key = {"sl" + index} className="progressItem">
             <div className="progressLabel">
               {elem.title}
             </div>

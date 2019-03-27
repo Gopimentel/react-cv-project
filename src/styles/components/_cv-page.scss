@@ -3,6 +3,7 @@
   //transform: translate(50%, 0%);
   max-width: $cv-page-width-limit;
   padding: $s-size;
+  width:100%;
 }
 
 .userPicture {
@@ -20,6 +21,7 @@
   width:100%;
   overflow:overlay;
   position: absolute;
+  min-width: 65rem;
   transform: translateY(-$header-banner-spacing);
   display: flex;
   h2 {
