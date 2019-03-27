@@ -2,8 +2,8 @@ import React from 'react';
 
 const SectionTitle = (props) => (
     <div>
-         <h1 className="accomplisments__title">{props.title}</h1>
-        <hr className="accomplisments__titleline" />
+         <h1 className="accomplishments__title">{props.title}</h1>
+        <hr className="accomplishments__titleline" />
     </div>
 );
 

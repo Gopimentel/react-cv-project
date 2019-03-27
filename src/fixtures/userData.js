@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 export const userData = {
   imgUrl:
     "https://media.licdn.com/dms/image/C4D03AQHYaqBF_hvCOA/profile-displayphoto-shrink_200_200/0?e=1559174400&v=beta&t=sOk5oplUYfaB-KmiXPr7-iccRDbsacZ3SygcQKybTZ4",
@@ -5,7 +7,7 @@ export const userData = {
   age: "27",
   birthDate: "28/03/1991", //use moment here
   nationality: "portuguese",
-  address: "A Random Address should appear here",
+  address: "A Random Address should appear here eoifjeofbwoifweujfiwepofhew",
   phone: "+351 XXXXXXXXX",
   mail: "golpimentel@gmail.com",
   accomplishments: {
@@ -56,8 +58,8 @@ export const userData = {
 
     {
       title: "Application Developer – ??????????",
-      startDate:"January 2017",
-      endDate: "Current ( 2 years, 3 months )",
+      totalYears:moment().diff(moment("20170124","YYYYMMDD"),'years'),
+      totalMonths:moment().diff(moment("20170124","YYYYMMDD"),'months'),
       titles:[
         {startDate: "December 2018",
         endDate: "Current",
@@ -75,8 +77,11 @@ export const userData = {
       description : "Web Applications were developed in SAP Cloud Platform (SAPUI5+HANA). JavaScript (SAPUI5), HTML5/XML and CSS3 were the main technologies used to achieve the desired goals. REST services were also created recurring to JAVA. Work developed in a SCRUM environment."
     }
   ],
-  awards : [ {
-    title: "PEST Incentive – INESC TEC",
-    description: "Research Grant awarded in the Area of Bioengineering. The grant was given to three students who  were taking their masters in Bioengineering, and had the duration of 3 months, going from April 2015 to June 2015."
-  }]
+  skills : [ 
+    {title: "React", level: 7 },
+    {title: "Redux", level: 6 },
+    {title: "Webpack + babel", level: 5 },
+    {title: "Javascript", level: 9 },
+    {title: "CSS/SASS", level: 7 },
+    {title: "Testing/Jest", level: 7 }]
 };

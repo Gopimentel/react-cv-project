@@ -1,12 +1,12 @@
 .cvPage {
   display: flex;
   //transform: translate(50%, 0%);
-  width:100%;
-  max-width:$cv-page-width-limit;
-  margin:$s-size
+  max-width: $cv-page-width-limit;
+  padding: $s-size;
 }
 
 .userPicture {
+  display:block; // to take out space in bottom of image;
   height: $left-section;
   width: $left-section;
 }
@@ -17,9 +17,8 @@
 }
 
 .banner {
-  max-width:$cv-page-width-limit;
-  width: auto;
-  z-index: 10;
+  width:100%;
+  overflow:overlay;
   position: absolute;
   transform: translateY(-$header-banner-spacing);
   display: flex;
@@ -32,20 +31,24 @@
 }
 
 .banner__name {
-  min-width:  $left-section;
+  min-width: $left-section;
   opacity: 0.75;
   color: white;
   background-color: $banner-blue;
   width: 1 * $left-section + $s-size;
   margin: 0;
-  padding: $s-size $m-size;
+  padding: $m-size $m-size;
 }
 
 .banner__icons {
+  overflow: overlay;
+  margin-right: $l-size;
+
   img {
     width: 3rem;
     height: 2.5rem;
   }
+  
 }
 
 .bannerInfo {
@@ -58,31 +61,42 @@
   }
 }
 
-.skills-section {
-  padding: 0 $m-size 0 $l-size;
+.banner-info-text{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.compensateBanner{
+  height:$header-banner-spacing + 2*$s-size; // 2 time banner pading (top + bottom)
+}
+
+.right-section {
+  padding: 0 $m-size 0 $m-size;
 }
 
 .introduction {
   height: $left-section - $header-banner-spacing;
- 
-  padding-left : $s-size;
-  
-  
-  
+  padding-left: $m-size;
+  display: flex;
+  flex-direction: column;
 }
-.introduction__text{
+
+.introduction__text {
   overflow: overlay;
-  height: $left-section -  5*$header-banner-spacing ;
+  height: auto;
   padding-right: 2rem;
+  margin-bottom:$s-size;
   p {
-  
     color: $text-color;
     text-align: justify;
   }
 }
 
-.bannerSection {
-  transform: translateY(4.65 * $header-banner-spacing);
-  padding-bottom: 2.5 * $header-banner-spacing;
-  padding-left: $s-size;
+.skill-section{
+  padding-left: $m-size;
 }
+
+
+

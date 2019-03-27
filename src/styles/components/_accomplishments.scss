@@ -1,16 +1,17 @@
-.accomplisments{
-    transform: translateY(3.5*$header-banner-spacing);
-    padding-bottom:3*$header-banner-spacing;
+.accomplishments{
+    //transform: translateY(3.5*$header-banner-spacing);
+    //padding-bottom:3*$header-banner-spacing;
     padding-left:$s-size;
+    padding-top:$l-size;
 }
 
-.accomplisments__title{
+.accomplishments__title{
     width:60%;
     color:$text-color-dark;
     margin-bottom: 0.5* $horizontal-item-spacing;
 }
 
-.accomplisments__titleline{
+.accomplishments__titleline{
     width:60%;
     border-top: 5px solid $banner-blue;
 }
