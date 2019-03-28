@@ -90,6 +90,7 @@
 }
 
 .right-section {
+  width:100%;
   padding: 0 0 0 $m-size;
 }
 
@@ -124,10 +125,9 @@
 }
 
 .footer{
-  position:fixed;
   max-width: $cv-page-width-limit;
  
-  width:100%;
+  width:100em;
 
     text-align:center;
     p{
@@ -142,7 +142,6 @@
 
 @media only screen and (min-width: 768px) {
 .footer{
-  position:inherit;
    padding: $s-size;
 }
 .main-div {
