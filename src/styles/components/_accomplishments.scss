@@ -6,9 +6,12 @@
 }
 
 .accomplishments__title{
-    width:60%;
-    color:$text-color-dark;
-    margin-bottom: 0.5* $horizontal-item-spacing;
+    text-overflow: ellipsis;
+    width: 60%;
+    color: #565656;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .accomplishments__titleline{

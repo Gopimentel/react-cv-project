@@ -101,7 +101,7 @@
 }
 
 .introduction__text {
-  overflow: overlay;
+  overflow: auto;
   height: auto;
   padding-right: 2rem;
   margin-bottom:$s-size;
@@ -111,13 +111,22 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+
+.introduction__text {
+   overflow: overlay;
+ 
+}
+}
+
 .skill-section{
   padding-left: $m-size;
 }
 
 .footer{
-    max-width: $cv-page-width-limit;
-  padding: $s-size;
+  position:fixed;
+  max-width: $cv-page-width-limit;
+ 
   width:100%;
 
     text-align:center;
@@ -131,4 +140,13 @@
   font-weight:bold;
 }
 
-
+@media only screen and (min-width: 768px) {
+.footer{
+  position:inherit;
+   padding: $s-size;
+}
+.main-div {
+  width:auto;
+ 
+}
+}
