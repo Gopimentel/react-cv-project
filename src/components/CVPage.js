@@ -12,7 +12,7 @@ const technologies = "This page has been developed using React as Javascript Fra
 const tested = "Page tested in : Chrome, IE11, Mozila Firefox X.1 , Iphone 5s ."
 
 const CVPage = () => (
-<div>
+<div className="main-div">
   
   <div className="cvPage">
   
