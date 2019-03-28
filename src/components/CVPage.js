@@ -8,8 +8,8 @@ import ExperienceSection from "./ExperienceSection";
 import SkillSection from "./SkillSection";
 
 
-const technologies = "This page has been developed using React as Javascript Framework, SASS - for stylying, Webpack for bundling (of Javascript and CSS files) and Babel for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers)."
-const tested = "Page tested in : Windows with Chrome 73.0, IE 11.648, Mozila Firefox 65.0 and in Iphone 5s with iOS 12.1.2  with Chrome and Safari."
+const technologies = "This page has been developed using React as Javascript Framework, CSS/SASS for stylying, Webpack for bundling ( of Javascript and CSS files ) and Babel for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers )."
+const tested = "Page tested in : Windows 10 with Chrome 73.0, IE 11.648, Mozila Firefox 65.0 and in Iphone 5s with iOS 12.1.2 with Chrome and Safari."
 
 const CVPage = () => (
 <div className="main-div">
