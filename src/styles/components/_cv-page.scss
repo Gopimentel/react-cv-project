@@ -4,6 +4,7 @@
   max-width: $cv-page-width-limit;
   padding: $s-size;
   width:100%;
+ 
 }
 
 .userPicture {
@@ -61,6 +62,11 @@
     margin: 0.5rem;
     color: $text-color;
   }
+  a{
+      margin: 0.5rem;
+    color: $text-color;
+    
+  }
 }
 
 .banner-info-text{
@@ -75,7 +81,7 @@
 }
 
 .right-section {
-  padding: 0 $m-size 0 $m-size;
+  padding: 0 0 0 $m-size;
 }
 
 .introduction {
@@ -100,5 +106,20 @@
   padding-left: $m-size;
 }
 
+.footer{
+    max-width: $cv-page-width-limit;
+  padding: $s-size;
+  width:100%;
+
+    text-align:center;
+    p{
+      font-style:italic;
+      font-size:1.2rem;
+    }
+  }
+.footer-keyword{
+  color:$banner-blue;
+  font-weight:bold;
+}
 
 

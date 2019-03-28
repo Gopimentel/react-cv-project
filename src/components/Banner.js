@@ -12,10 +12,10 @@ const Banner = ({ name, age, nationality, address, phone, mail }) => (
      
     </div>
     <div className="banner__icons">
-    <BannerInfo image={"https://image.flaticon.com/icons/svg/771/771600.svg"} text = {address}/>
-    <BannerInfo image={"https://image.flaticon.com/icons/svg/685/685799.svg"} text = {phone}/>
-    <BannerInfo image={"https://image.flaticon.com/icons/svg/131/131155.svg"} text = {mail}/>
-    </div>
+    <BannerInfo image={"https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png"} text = {address} url ={"https://www."}/>
+    <BannerInfo image={"https://image.flaticon.com/icons/svg/131/131155.svg"} text = {mail} url ={"mailto:"}/>
+    <BannerInfo image={"https://image.flaticon.com/icons/svg/685/685799.svg"} text = {phone} url={"tel:"}/>
+   </div>
   </div>
 );
 

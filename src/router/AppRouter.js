@@ -8,7 +8,6 @@ import NotFoundPage from '../components/NotFoundPage'
 import AboutPage from '../components/AboutPage';
 
 const AppRouter = () => (
-
 <BrowserRouter>
     <Header/>
     <Switch>
@@ -19,6 +18,7 @@ const AppRouter = () => (
 
         
     </Switch>
+  
 </BrowserRouter>
 
 )

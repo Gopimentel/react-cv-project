@@ -4,11 +4,11 @@ export const userData = {
   imgUrl:
     "https://media.licdn.com/dms/image/C4D03AQHYaqBF_hvCOA/profile-displayphoto-shrink_200_200/0?e=1559174400&v=beta&t=sOk5oplUYfaB-KmiXPr7-iccRDbsacZ3SygcQKybTZ4",
   name: "Gonçalo Pimentel",
-  age: "27",
-  birthDate: "28/03/1991", //use moment here
+  age: moment().diff(moment("19910328","YYYYMMDD"),'years'),
+  birthDate: moment("19910328","YYYYMMDD"), //use moment here
   nationality: "portuguese",
-  address: "A Random Address should appear here eoifjeofbwoifweujfiwepofhew",
-  phone: "+351 XXXXXXXXX",
+  address: "linkedin.com/in/gopimentel",
+  phone: "+351 911057731",
   mail: "golpimentel@gmail.com",
   accomplishments: {
     education: [
@@ -42,8 +42,7 @@ export const userData = {
     ]
   },
 
-  introduction: ["I am former Researcher made Software Engineer. While my focus throughout my academic years has been in research, I always had a passion for developing software solutions to meet/ease our projects. This has led me, to leave the academic environment and completely embrace the software world I had so much interest in. Throughout this time, I have been continuously improving my skills in web development (JavaScript, HTML5/XML as well as in JAVA), and gaining experience in this fast-paced industry. Some of my best qualities are the tenacity to never give up and to be always eager to learn more. Together with my continuous search for improvement and academic background I am searching for defying challenges that can make me thrive as well"],
-
+  introduction: ["Currently, I am a software developer who sees himself as a strong team player that seeks to improve and help the group to meet their goals and deliver the best product possible. Throghout the last 2 years I have specialized purely in web development. From the first line of Javascript, through the Java webservice into the database sql insertion, I have helped my company develop web applications from both ends. However, my passion has always been with Javascript and the frontend stack. Therefore, in my free time, I look for new approaches to web development, which led to me found React. That is why I am now seeking a new opportunity to specialize in the front end development stack with React and where my work can reach millions of people."],
   experience:[
     {
       title: "Freelancer",
@@ -57,7 +56,7 @@ export const userData = {
     },
 
     {
-      title: "Application Developer – ??????????",
+      title: "Application Developer – Accenture",
       totalYears:moment().diff(moment("20170124","YYYYMMDD"),'years'),
       totalMonths:moment().diff(moment("20170124","YYYYMMDD"),'months'),
       titles:[
@@ -78,10 +77,10 @@ export const userData = {
     }
   ],
   skills : [ 
-    {title: "React", level: 7 },
-    {title: "Redux", level: 6 },
-    {title: "Webpack + babel", level: 5 },
+    {title: "Java", level: 7 },
+    {title: "React/Redux", level: 7 },
     {title: "Javascript", level: 9 },
-    {title: "CSS/SASS", level: 7 },
-    {title: "Testing/Jest", level: 7 }]
+    {title: "CSS/SASS", level: 8 },
+    {title: "Jest", level: 6 },
+    {title: "Webpack", level: 5 }]
 };

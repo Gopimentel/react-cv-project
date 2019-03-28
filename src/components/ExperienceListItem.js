@@ -6,8 +6,8 @@ const ExperienceListItem = ({ title, totalYears, totalMonths,endDate, titles }) 
     {title && <h3 className="experienceList__title">{title}</h3>}
     { (
       <p className="experienceList__date">
-       {totalYears>0  && <span>{ totalYears } {totalYears > 1 ? "years" : "year"},</span> }
-       {totalYears>0  && <span>{ totalMonths%12 } {totalMonths%12 > 1 ? "Months" : "Month"}  </span> }
+       {totalYears>0  && <span>{ totalYears } {totalYears > 1 ? "years" : "year"}</span> }
+       {totalYears>0  &&<span> and { totalMonths%12 } {totalMonths%12 > 1 ? "Months" : "Month"}  </span> }
       </p>
     )}
     {titles && (

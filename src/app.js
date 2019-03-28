@@ -4,5 +4,5 @@ import AppRouter from './router/AppRouter';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import "react-sweet-progress/lib/style.css";
+
 ReactDOM.render(<AppRouter />, document.getElementById('app')); 
