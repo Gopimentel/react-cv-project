@@ -1,14 +1,21 @@
-.cvPage {
-  display: flex;
-  //transform: translate(50%, 0%);
-  max-width: $cv-page-width-limit;
-  padding: $s-size;
+.main-div {
   width:100%;
  
 }
-.main-div{
-  width:100%;
+.cvPage {
+    display: flex;
+    max-width: $cv-page-width-limit;
+    padding: $s-size;
+    width:100%;
 }
+@media only screen and (min-width: 768px) {
+
+.main-div {
+  width:auto;
+ 
+}
+}
+
 .userPicture {
   display:block; // to take out space in bottom of image;
   height: $left-section;
