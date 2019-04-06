@@ -42,7 +42,7 @@ export const userData = {
     ]
   },
 
-  introduction: ["Currently, I am a software developer who sees himself as a strong team player that seeks to improve and help the group to meet their goals and deliver the best product possible. Throughout the last 2 years I have specialized purely in web development. From the first line of Javascript, through the Java webservice into the database sql insertion, I have helped my company develop web applications from both ends. However, my passion has always been Javascript and the frontend stack. Therefore, in my free time, I look for new approaches to web development, which led to me found React. That is why I am now seeking a new opportunity to specialize in the front end development with React and where my work can reach millions of people."],
+  introduction: ["Currently, I am a software developer who sees himself as a strong team player that seeks to improve and help the group to meet their goals and deliver the best product possible. Throughout the last 2 years I have specialized purely in web development. From the first line of Javascript, through the Java webservice into the database sql insertion, I have helped my company develop web applications from both ends. However, my passion has always been Javascript and the frontend stack. Therefore, in my free time, I look for new approaches to web development, which led to me found React. That is why I am now seeking a new opportunity to specialize in the front end development recurring to state-of-the-art technology and where my work can reach millions of people."],
   experience:[
     {
       title: "Freelancer",
