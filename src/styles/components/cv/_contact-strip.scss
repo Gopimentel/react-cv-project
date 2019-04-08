@@ -1,0 +1,55 @@
+.contact-strip {
+  width: 100%;
+  overflow: overlay;
+  position: absolute;
+  min-width: 65rem;
+  transform: translateY(-$header-banner-spacing);
+  display: flex;
+  h2 {
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+
+  &__name {
+    min-width: $left-section;
+    opacity: 0.75;
+    color: white;
+    background-color: $banner-blue;
+    width: 1 * $left-section + $s-size;
+    margin: 0;
+    padding: $m-size $m-size;
+  }
+
+  &__contacts {
+    overflow: overlay;
+    margin-right: $l-size;
+
+    img {
+      width: 3rem;
+      height: 2.5rem;
+    }
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  padding-left: $s-size;
+  p {
+    margin: 0.5rem;
+    color: $text-color;
+  }
+  a {
+    margin: 0.5rem;
+    color: $text-color;
+  }
+
+  &__text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

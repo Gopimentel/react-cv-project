@@ -1,19 +1,14 @@
+.header-layout {
+  width: 100%;
+  background-color: $about-grey;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  display: none;
 
-  .header-layout{
-    width:100%;
-    background-color:$about-grey;
-    height: 5rem;
-    display:flex;
-    justify-content: center;
-    
-    a{
-      color:$banner-blue;
-      font-weight: bold;
-      padding: $horizontal-item-spacing;
-    }
-
-
-    display:none;
+  a {
+    color: $banner-blue;
+    font-weight: bold;
+    padding: $horizontal-item-spacing;
   }
-
-  
+}

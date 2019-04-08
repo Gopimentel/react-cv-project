@@ -1,9 +1,9 @@
 import React from "react";
 import ExperienceListItem from "./ExperienceListItem";
-import SectionTitle from "./SectionTitle";
+import Title from "../utils/Title";
 const ExperienceSection = props => (
   <div className = "experienceList">
-    <SectionTitle title={props.title} />
+    <Title title={props.title} />
     {props.data.map((elem, index) => (
       <ExperienceListItem key={index} {...elem} />
     ))}

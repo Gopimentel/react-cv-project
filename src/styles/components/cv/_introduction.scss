@@ -1,0 +1,25 @@
+.introduction {
+  height: $left-section - $header-banner-spacing;
+  padding-left: $m-size;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    overflow: auto;
+    height: auto;
+    padding-right: 2rem;
+    margin-bottom: $s-size;
+    p {
+      color: $text-color;
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+  .introduction {
+    &__text {
+      overflow: overlay;
+    }
+  }
+}

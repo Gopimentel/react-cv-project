@@ -1,10 +1,15 @@
 @import './common/settings';
 @import './common/base';
-@import './common/timeline';
 
 @import './components/header';
 @import './components/cv-page';
-@import './components/section-list-item';
-@import './components/accomplishments';
-@import './components/experience-section';
-@import './components/progress-bar';
+
+@import './components/cv/utils/utils';
+@import './components/cv/utils/timeline';
+
+@import './components/cv/contact-strip';
+@import './components/cv/education';
+@import './components/cv/experience';
+@import './components/cv/introduction';
+@import './components/cv/skills';
+

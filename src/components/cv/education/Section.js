@@ -1,10 +1,10 @@
 import React from "react";
 import SectionListItem from "./SectionListItem";
-import SectionTitle from "./SectionTitle";
+import Title from "../utils/Title";
 
 const Section= props => (
   <div>
-   <SectionTitle title = {props.title}/>
+   <Title title = {props.title}/>
     {props.data.map((elem, index) => (
       <SectionListItem key={index} data={elem} />
     ))}

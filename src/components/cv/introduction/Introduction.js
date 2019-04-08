@@ -1,8 +1,8 @@
 import React from "react";
-import SectionTitle from './SectionTitle';
+import Title from '../utils/Title';
 const Introduction = props => (
   <div className = "introduction">
-    <SectionTitle title={"Introduction"} />
+    <Title title={"Introduction"} />
     <div className="introduction__text">
       <p>{props.text}</p>
     </div>

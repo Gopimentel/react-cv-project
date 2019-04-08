@@ -1,23 +1,15 @@
 .main-div {
-  width:100%;
- 
+  width: 100%;
 }
 .cvPage {
-    display: flex;
-    max-width: $cv-page-width-limit;
-    padding: $s-size;
-    width:100%;
-}
-@media only screen and (min-width: 768px) {
-
-.main-div {
-  width:auto;
- 
-}
+  display: flex;
+  max-width: $cv-page-width-limit;
+  padding: $s-size;
+  width: 100%;
 }
 
 .userPicture {
-  display:block; // to take out space in bottom of image;
+  display: block; // to take out space in bottom of image;
   height: $left-section;
   width: $left-section;
 }
@@ -27,127 +19,40 @@
   background-color: $about-grey;
 }
 
-.banner {
-  width:100%;
-  overflow:overlay;
-  position: absolute;
-  min-width: 65rem;
-  transform: translateY(-$header-banner-spacing);
-  display: flex;
-  h2 {
-    margin: 0;
-  }
-  h3 {
-    margin: 0;
-  }
-}
-
-.banner__name {
-  min-width: $left-section;
-  opacity: 0.75;
-  color: white;
-  background-color: $banner-blue;
-  width: 1 * $left-section + $s-size;
-  margin: 0;
-  padding: $m-size $m-size;
-}
-
-.banner__icons {
-  overflow: overlay;
-  margin-right: $l-size;
-
-  img {
-    width: 3rem;
-    height: 2.5rem;
-  }
-  
-}
-
-.bannerInfo {
-  display: flex;
-  align-items: center;
-  padding-left: $s-size;
-  p {
-    margin: 0.5rem;
-    color: $text-color;
-  }
-  a{
-      margin: 0.5rem;
-    color: $text-color;
-    
-  }
-}
-
-.banner-info-text{
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.compensateBanner{
-  height:$header-banner-spacing + 2*$s-size; // 2 time banner pading (top + bottom)
+.compensateBanner {
+  height: $header-banner-spacing + 2 * $s-size; // 2 time banner pading (top + bottom)
 }
 
 .right-section {
-  width:100%;
+  width: 100%;
   padding: 0 0 0 $m-size;
 }
 
-.introduction {
-  height: $left-section - $header-banner-spacing;
-  padding-left: $m-size;
+.footer {
+  min-width: 65rem;
   display: flex;
+  max-width: 90rem;
+  width: 100%;
   flex-direction: column;
-}
-
-.introduction__text {
-  overflow: auto;
-  height: auto;
-  padding-right: 2rem;
-  margin-bottom:$s-size;
+  text-align: center;
+  position: absolute;
   p {
-    color: $text-color;
-    text-align: justify;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  &__keyword {
+    color: $banner-blue;
+    font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 768px) {
-
-.introduction__text {
-   overflow: overlay;
- 
-}
-}
-
-.skill-section{
-  padding-left: $m-size;
-}
-
-.footer{
-    min-width: 65rem;
-    display: flex;
-    max-width: 90rem;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    p{
-      font-style:italic;
-      font-size:1.2rem;
-    }
+  .main-div {
+    width: auto;
   }
-.footer-keyword{
-  color:$banner-blue;
-  font-weight:bold;
-}
 
-@media only screen and (min-width: 768px) {
-.footer{
-   padding: $s-size;
-}
-.main-div {
-  width:auto;
- 
-}
+  .footer {
+    padding: $s-size;
+  }
 }

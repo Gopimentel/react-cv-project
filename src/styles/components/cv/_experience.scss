@@ -1,0 +1,36 @@
+.experienceList {
+
+    padding-bottom: 2.5 * $header-banner-spacing;
+    padding-left: $s-size;
+    padding-top:$l-size + $header-banner-spacing;
+
+    &__title {
+        font-weight: bold;
+        color:$banner-blue;
+        margin-bottom:0;
+        
+    }
+
+    &__total-time {
+        font-weight: bold;
+        color:$text-color-dark;
+        margin: $s-size/4 0 $s-size/2 0;
+    }
+
+    &__dates {
+        color:$text-color;
+        margin: 0.5*$s-size 0;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+
+    &__titles {
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+
+    &__description{
+        color:$text-color;
+        text-align: justify;
+    }
+  }

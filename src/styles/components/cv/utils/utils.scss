@@ -1,0 +1,16 @@
+.custom-title{
+    &__title{
+        text-overflow: ellipsis;
+        width: 90%;
+        color: #565656;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__titleline{
+        width:60%;
+        border-top: 5px solid $banner-blue;
+        text-align:left;
+    }
+}

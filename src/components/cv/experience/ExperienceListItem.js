@@ -5,7 +5,7 @@ const ExperienceListItem = ({ title, totalYears, totalMonths,endDate, titles }) 
   <div>
     {title && <h3 className="experienceList__title">{title}</h3>}
     { (
-      <p className="experienceList__date">
+      <p className="experienceList__total-time">
        {totalYears>0  && <span>{ totalYears } {totalYears > 1 ? "years" : "year"}</span> }
        {totalYears>0  &&<span> and { totalMonths%12 } {totalMonths%12 > 1 ? "Months" : "Month"}  </span> }
       </p>

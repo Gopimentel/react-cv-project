@@ -1,3 +1,8 @@
+.accomplishments{
+    padding-left:$s-size;
+    padding-top:$l-size;
+}
+
 .sectionlistitem-box{
     width:85%;
     color:$text-color;
@@ -11,16 +16,8 @@
         font-weight:lighter;
     }
 
-    
-}
-
-
-// Hide last bar since not item comes next
-.sectionlistitem-box:last-child hr{
-    visibility: hidden;
-}
-
-hr {
-    width:100%;
-    margin:0;
+    // Hide last bar since not item comes next
+    &:last-child hr{
+        visibility: hidden;
+    }
 }

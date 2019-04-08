@@ -1,11 +1,11 @@
 import React from "react";
 import { userData } from "../fixtures/userData";
 
-import Accomplishments from "./Accomplishments";
-import Banner from "./Banner";
-import Introduction from "./Introduction";
-import ExperienceSection from "./ExperienceSection";
-import SkillSection from "./SkillSection";
+import Accomplishments from "./cv/education/Accomplishments";
+import Banner from "./cv/contact-strip/ContactStrip";
+import Introduction from "./cv/introduction/Introduction";
+import ExperienceSection from "./cv/experience/ExperienceSection";
+import SkillSection from "./cv/skills/SkillSection";
 
 
 const technologies = "This page has been developed using React as Javascript Framework, CSS/SASS for stylying, Webpack for bundling ( of Javascript and CSS files ) and Babel for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers )."
@@ -35,10 +35,10 @@ const CVPage = () => (
 
   <div className = "footer" >
   <p>
-    <span>This page has been developed using <span className="footer-keyword">React</span> as Javascript Framework, </span>
-    <span><span className="footer-keyword">SASS</span> - for stylying, </span>
-    <span><span className="footer-keyword">Webpack</span> for bundling ( of Javascript and CSS files ) </span> 
-    <span>and <span className="footer-keyword">Babel</span> for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers ).</span></p>
+    <span>This page has been developed using <span className="footer__keyword">React</span> as Javascript Framework, </span>
+    <span><span className="footer__keyword">SASS</span> - for stylying, </span>
+    <span><span className="footer__keyword">Webpack</span> for bundling ( of Javascript and CSS files ) </span> 
+    <span>and <span className="footer__keyword">Babel</span> for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers ).</span></p>
   <p>{tested}</p>
 </div>
   </div>

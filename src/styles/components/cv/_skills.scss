@@ -1,0 +1,43 @@
+.skill-section {
+  padding-left: $m-size;
+
+  &__list {
+    margin-top: $m-size;
+    color: $text-color-dark;
+    font-weight: bold;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: $s-size;
+    }
+  }
+}
+
+
+.progress-label {
+  width: 30%;
+}
+
+.progress-bar {
+  justify-content: flex-start;
+  display: flex;
+  width: 60%;
+  margin-left: $s-size;
+  align-content: right;
+
+  &__inner {
+    position: relative;
+    height: 20px;
+    width: 50%;
+    border-radius: 9px;
+    border: 1px solid $text-color-dark;
+
+    &__fill {
+      background: $banner-blue;
+      height: 100%;
+      border-radius: inherit;
+      transition: width 0.2s ease-in;
+    }
+  }
+}
