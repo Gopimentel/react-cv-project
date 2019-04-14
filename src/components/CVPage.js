@@ -1,6 +1,5 @@
 import React from "react";
-import { userData } from "../fixtures/userData";
-
+import {connect} from 'react-redux';
 import Accomplishments from "./cv/education/Accomplishments";
 import Banner from "./cv/contact-strip/ContactStrip";
 import Introduction from "./cv/introduction/Introduction";
@@ -11,24 +10,24 @@ import SkillSection from "./cv/skills/SkillSection";
 const technologies = "This page has been developed using React as Javascript Framework, CSS/SASS for stylying, Webpack for bundling ( of Javascript and CSS files ) and Babel for code transpiling ( to transform modern Javascript into ES5 to be run in older browsers )."
 const tested = "Page tested in : Windows 10 with Chrome 73.0, IE 11.648, Mozila Firefox 65.0 and in Iphone 5s with iOS 12.1.2 with Chrome and Safari."
 
-const CVPage = () => (
+const CVPage = (props) => (
 <div className="main-div">
   
   <div className="cvPage">
   
 
     <div className="about-section">
-      <img src={userData.imgUrl} className="userPicture" />
-      <Banner {...userData} />
+      <img src={props.userData.imgUrl} className="userPicture" />
+      <Banner {...props.userData} />
       <div className="compensateBanner"/>
-      <Accomplishments accomplishments={userData.accomplishments} />
+      <Accomplishments accomplishments={props.userData.accomplishments} />
     </div>
     <div className="right-section">
-      <Introduction text={userData.introduction} />
+      <Introduction text={props.userData.introduction} />
       <div className="compensateBanner"/>
       <div >
-        <ExperienceSection title="Experience" data={userData.experience} />
-      <SkillSection title="Technical Skills" data={userData.skills}/>
+        <ExperienceSection title="Experience" data={props.userData.experience} />
+      <SkillSection title="Technical Skills" data={props.userData.skills}/>
       </div>
     </div>
   </div>
@@ -44,4 +43,8 @@ const CVPage = () => (
   </div>
 );
 
-export default CVPage;
+const mapStateToProps = (state) => {
+  return {  userData : state.userData }
+};
+
+export default connect(mapStateToProps)(CVPage);
